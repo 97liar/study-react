@@ -22,12 +22,9 @@ const handleClick = useCallback((e) => {
         <title>Index Page</title>
       </Head>
       <Header />
-      <a
-      href="/about"
-      onClick={handleClick}
-    >
+      <a href="" onClick={handleClick}>
       ボタン
-    </a>
+      </a>
       <Main page="index" />
       <Footer />
     </div>
