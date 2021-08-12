@@ -45,7 +45,7 @@ useEffect(() => {
       <Header />
       {isShow ? <h1>{count}</h1> : null}
       <button href="" onClick={handleClick}>ボタン</button>
-      <button onClick={() => {handleDisplay}}>{isShow ? "非表示" : "表示"}</button>
+      <button onClick={handleDisplay}>{isShow ? "非表示" : "表示"}</button>
       <input type="text" value={text} onChange={handleChange}/>
       <Main page="index" />
       <Footer />
