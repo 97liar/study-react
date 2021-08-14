@@ -5,7 +5,7 @@ export const useCounter = () => {
   const [count , setCount] = useState(1);
   const [isShow , setIsShow] = useState(true);
 
-const doubleCount = useMemo(() => {
+  const doubleCount = useMemo(() => {
   return count * 2; 
 }, [count]);
 

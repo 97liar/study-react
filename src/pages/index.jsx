@@ -6,7 +6,6 @@ import { Main } from 'src/components/Main'
 import { Header } from 'src/components/Header'
 
 export default function Home(props) {
-  const {count, isShow, handleClick, handleDisplay,  text, array, handleChange, handleAdd} = props; 
 
   return (
     <div className={styles.container}>
@@ -15,14 +14,14 @@ export default function Home(props) {
       </Head>
       <Header />
       
-      {isShow ? <h1>{count}</h1> : null}
-      <button href="" onClick={handleClick}>ボタン</button>
-      <button onClick={handleDisplay}>{isShow ? "非表示" : "表示"}</button>
+      {props.isShow ? <h1>{props.count}</h1> : null}
+      <button href="" onClick={props.handleClick}>ボタン</button>
+      <button onClick={props.handleDisplay}>{props.isShow ? "非表示" : "表示"}</button>
 
-      <input type="text" value={text} onChange={handleChange}/>
-      <button onClick={handleAdd}>追加</button>
+      <input type="text" value={props.ext} onChange={props.handleChange}/>
+      <button onClick={props.handleAdd}>追加</button>
       <ul>
-        {array.map(item => {
+        {props.array.map(item => {
           return (
             <li key={item}>{item}</li>
           )
