@@ -12,7 +12,7 @@ export const Footer = () => {
           Thanks by{' '}
           <span className={classes.logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
+            </span>
         </a>
       </footer>
   )
